@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple DOM Manipulation</title>
+</head>
+<body>
+
+<h1>Simple DOM Manipulation Example</h1>
+
+<p id="myParagraph">This is a paragraph.</p>
+
+<button onclick="changeText()">Change Text</button>  
+
+<script>
+  function changeText() {
+    const paragraph = document.getElementById('myParagraph');
+    paragraph.textContent = 'Text changed dynamically!';
+  }
+</script>
+
+</body>
+</html>
