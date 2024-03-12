@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const str = "Hey";
+      //for/of
+      for (const char of str) {
+        console.log(char);
+      }
+
+      //for...in
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+      };
+
+      for (let key in person) {
+        console.log(key + ": " + person[key]);
+      }
+
+      //map
+      const myMap = new Map([
+        ["name", "Alice"],
+        ["age", 25],
+        ["city", "New York"],
+      ]);
+      console.log(myMap.get("age"));
+
+      // Create a Set
+      const letters = new Set();
+      letters.add("a");
+      letters.add("b");
+      letters.add("c");
+      document.getElementById("demo").innerHTML = letters.size;
+
+      //length of string
+      let name = "Srushti";
+      console.log(name.length);
+      console.log(name.toUpperCase());
+      console.log(name.toLowerCase());
+
+      //slice()
+      console.log(name.slice(2, 4));
+      console.log(name.slice(3));
+
+      //replace()
+      console.log(name.replace("ti", "ty"));
+      let friend = "Vaishnavi";
+      console.log(name.concat("is a friend of ", friend, "ok"));
+
+      //trim()
+      let friend2 = "       Kajol       ";
+      console.log(friend2.trim());
+
+      //repeate()
+      let text = "srushti";
+      let result = text.repeat(2);
+      console.log(result);
+
+      //search()
+      let text1 = "Please locate where 'locate' occurs!";
+      let index = text1.search("locate");
+      console.log(index);
+
+      //match()
+      let text3 = "India is my country";
+      let result2 = text3.match("cou");
+
+      
+    </script>
+  </body>
+</html>

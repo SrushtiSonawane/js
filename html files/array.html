@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <script>
+        //toString()
+        let num = [1,2,3,4,5];
+        let b = num.toString();
+        console.log(b);
+
+        //join()
+        let c = num.join("_");
+        console.log(c, typeof c);
+
+        //pop()
+        num.pop();
+        console.log(num);
+
+        //push()
+        let a = [34,23,56,87,4];
+        a.push(9);
+        console.log(a);
+
+        //shift()
+        let r = num.shift();
+        console.log(r, num);
+
+        //unshift()
+        let s = num.unshift();
+        console.log(s, num);
+
+
+
+    </script>
+</body>
+</html>
