@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Event</title>
+  </head>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button id="myButton">Click me</button>
+
+    <script>
+      let button = document.getElementById("myButton");
+
+
+      button.addEventListener("click", function (){
+        alert("Button clicked!");
+      });
+
+      button.addEventListener("mouseover", function (){
+        button.style.backgroundColor = "lightblue";
+      });
+
+      button.addEventListener("mouseout", function (){
+        button.style.backgroundColor = "olive";
+      });
+
+      button.addEventListener("dblclick", function (){
+        alert("Double-clicked on the button!");
+      });
+
+  
+    </script>
+  </body>
+</html>
