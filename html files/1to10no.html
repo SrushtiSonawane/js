@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>divisible by 5</title>
+    <title>escape 5</title>
 </head>
 <body>
+    <ul id="myList"></ul>
     <script>
-        
+        const myList = document.getElementById("myList")
         for(j=1; j<=10; j++){
             if(j === 5){
                 continue;
             }
+            let item = document.createElement("li")
+            item.innerHTML = j
+            myList.appendChild(item);
         }
-        document.write(j);
+        
     </script>
 </body>
 </html>
