@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method in Javascript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+          };
+          
+          document.getElementById("demo").innerHTML = Object.values(person);
+
+
+        //object literals
+        const mySym = Symbol("key1")
+        const jsUser = {
+            name:"srushti",
+            age:21,
+            [mySym]:"mykey1",
+            location:"loni",
+            email: "srushtisonawane999@gmail.com",
+        };
+        document.write(jsUser["email"]);
+        document.write(jsUser[mySym]);
+
+
+        
+
+
+        /*class RailwayForm{
+            submit(){
+                alert("form submitted")
+            }
+            cancel(){
+                alert(this.name + ":This form is cancelled")
+            }
+            fill(givenname){
+                this.name = name
+            }
+        }
+        let harryForm = new RailwayForm();
+        harryForm.fill("Harry", 145316); 
+
+        let rohanForm1 = new RailwayForm();
+        let rohanForm2 = new RailwayForm();
+
+        rohanForm1.fill("Rohan", 222420);
+        rohanForm2.fill("Rohan", 2229211);
+
+        harryForm.submit();
+        rohanForm1.submit();
+        rohanForm2.cancel;
+        rohanForm1.submit();*/
+
+    </script>
+</body>
+</html>

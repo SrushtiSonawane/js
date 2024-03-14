@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      const car = {
+        make: "Toyota",
+        model: "Camry",
+        year: "2020",
+      };
+      for (const property in car) {
+        if (car.hasOwnProperty(property)) {
+          document.write(property + ": " + car[property]);
+        }
+      }
+    </script>
+  </body>
+</html>
