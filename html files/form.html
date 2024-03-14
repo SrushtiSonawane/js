@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Data Display</title>
+</head>
+<body>
+
+<h2>Enter Your Information</h2>
+
+<form id="myForm">
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label for="lastName">Last name:</label><br>
+    <input type="text" id="lastName" name="lastName"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<div id="output"></div>
+
+<script>
+function submitForm() {
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let email = document.getElementById("email").value;
+    let outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = "<h2>Submitted Information:</h2>" + "<p><strong>First Name:</strong> " + firstName + "</p>" +"<p><strong>Last Name:</strong> " + lastName + "</p>" +"<p><strong>Email:</strong> " + email + "</p>";
+}
+</script>
+
+</body>
+</html>
