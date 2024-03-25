@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getResponseHeader method</title>
+    <style>
+        body{
+            background-color:beige;
+            color: black;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="background-color: bisque;">getResponseHeader method</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea illo, qui voluptatibus architecto sit! Molestias, consequatur, illo totam veniam corrupti natus impedit sequi ea, odio eum aliquam at vel.</p>
+    <p>Last modified: <span id="demo"></span></p>
+    <script>
+        xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){
+            document.getElementById("demo").innerHTML = this.getResponseHeader("Last-modified:");
+        }
+        xhttp.open("GET", "file.txt");
+        xhttp.send();
+
+
+    </script>
+</body>
+</html>

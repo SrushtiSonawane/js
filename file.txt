@@ -1,0 +1,3 @@
+What is Programming?
+
+Programming is like giving instructions to your computer. Imagine you have a magic notebook where you can write down things for your friend to do, and they'll do exactly what you write. That's kind of how programming works!
